@@ -9,10 +9,12 @@
 <body>
     <center>
     <h3><u>Add Vehicle Details</u></h3>
-    <form align="left">
+    <form align="left" method="post" action="/create/">
+        {% csrf_token %}  
         <table border="1">
             {{form}}
         </table>
+        <input type="Submit">
     </form>
     </center>
 </body>
